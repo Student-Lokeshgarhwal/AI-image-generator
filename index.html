@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image search app</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/codes/bootstrap/css/bootstrap-4.6.2-dist/css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="/codes/bootstrap/css/bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+    <!-- <script src="/bootstrap/css/bootstrap-4.6.2-dist/js/bootstrap.js"></script> -->
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- css animatoin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <div class="container ">
+        <div class="row justify-content-center">
+            <h1 class="col-md-5 animate__heartBeat">Image Generator App</h1>
+        </div>
+        <form action="">
+            <input type="text" id="search-input" placeholder="Search for Images" class="shadow mr-2 " >
+            <!-- <button id="search-button">Search</button> -->
+            <button class="btn-37">
+                <span class="new">New</span>
+                <div class="old">
+                    <span>Search</span>
+                    <span aria-hidden>Search</span>
+                </div>
+            </button>
+        </form>
+
+        <div class="search-results">
+            <div class="search-result shadow">
+                <img src="https://images.unsplash.com/photo-1722433258015-0fa276cb3022?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Mountains covered in snow under a blue sky">
+
+                <a href="https://unsplash.com/photos/a-group-of-mountains-covered-in-snow-under-a-blue-sky-bzBgzqXpuSY"
+                    target="_blank">Mountains covered in snow under a blue sky</a>
+
+            </div>
+
+            <div class="search-result shadow">
+                <img src="https://images.unsplash.com/photo-1620428268482-cf1851a36764?q=80&w=2009&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="white and brownrobot">
+
+                <a href="https://unsplash.com/photos/white-and-brown-robot-toy-d0oYF8hm4GI" target="_blank">white and
+                    brown robot</a>
+            </div>
+
+
+            <div class="search-result shadow">
+                <img src="https://images.unsplash.com/photo-1672740276184-74e76b16c0f8?q=80&w=1856&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="a mountain in the distance with a lake in front of it">
+
+                <a href="https://unsplash.com/photos/a-mountain-is-in-the-distance-with-a-lake-in-front-of-it-4VELvD-vdVg"
+                    target="_blank">a mountain in the distance with a lake in front of it</a>
+
+            </div>
+        </div>
+        <button id="show-more" class="btn btn-outline-secondary">Show more</button>
+
+        <div class="row">
+            <div class="col">
+                <button class="btn-22 float-right " data-toggle="modal" data-target="#mymodalbtn"><span>Learn
+                        more.</span></button>
+            </div>
+
+            <div class="modal " id="mymodalbtn" data-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                        <div class="modal-header bg-secondary">
+                            <h3 class="mr-auto text-light animate__slideInUp">Image Generator App</h3>
+                        </div>
+                        <div class="modal-body bg-light text-secondary">An AI image generator is a tool that uses artificial intelligence to create images based on text descriptions. Here’s a brief overview of how it works: <br>
+
+                            Text Input: You provide a description of the image you want to generate. <br>
+                            AI Processing: The AI model processes the text and uses its trained algorithms to create an image that matches the description. <br>
+                            Image Output: The generated image is produced, often in a matter of seconds.
+                        </div>
+                        <div class="modal-footer ">
+                            <button data-dismiss="modal" class="btn btn-outline-danger my-n1 ">close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
