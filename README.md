@@ -1,1 +1,2 @@
-Live demo:{https://student-lokeshgarhwal.github.io/AI-image-generator/}
+Live demo  <br/>
+https://student-lokeshgarhwal.github.io/AI-image-generator/
