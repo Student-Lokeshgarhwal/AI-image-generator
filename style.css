@@ -273,3 +273,9 @@
   .btn-22:hover:before {
     transform: translateY(-50%) scale(2);
   }
+  
+  @media screen  and (min-width : 1024px){
+  .container{
+    margin-top: 100px;
+  }
+}
